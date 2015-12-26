@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+body {
+  font-family: Roboto Slab, serif;
+  font-size: 22px;
+  -webkit-font-kerning: normal;
+  -moz-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-font-variant-ligatures: normal;
+  -moz-font-variant-ligatures: normal;
+  font-variant-ligatures: normal;
+  background-color: black;
+}
+
+.page {
+  height: 100vh;
+  position: relative;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+}
+
+.page::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page--1 {
+  background: #311B92 url(../images/stars.svg) center/cover;
+  color: white;
+  line-height: 1.4;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+}
+
+.page__title {
+  font-size: 72px;
+  font-size: 7vw;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: Amatic SC;
+  line-height: 1;
+  padding: 0 0 .5em;
+}
+
+.page__section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page__section--right {
+  width: 50%;
+  float: right;
+  padding: 5%;
+}
+
+.nativity-positioner {
+  pointer-events: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.nativity {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.stars-positioner {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stars {
+  width: auto;
+  height: 100%;
+}
+
+@media (max-width:1200px) {
+  body {
+    font-size: 20px;
+  }
+
+  .nativity {
+    left: -10%;
+    width: 110%;
+  }
+
+  .page__section--right {
+    width: 60%;
+  }
+}
+
+@media (max-width:1000px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page__section--right {
+    width: 60%;
+  }
+}
+
+@media (max-width:640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .page__title {
+    font-size: 48px;
+  }
+
+  .page__section--right {
+    width: 100%;
+    float: none;
+  }
+}
+@media (max-aspect-ratio: 1/1) {
+  .page__section--right {
+    width: 100%;
+    float: none;
+  }
+}
