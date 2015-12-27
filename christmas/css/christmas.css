@@ -60,9 +60,9 @@ body {
 }
 
 .page__section--right {
-  width: 50%;
+  width: 56%;
   float: right;
-  padding: 5%;
+  padding: 6%;
 }
 
 .nativity-positioner {
@@ -106,7 +106,7 @@ body {
   }
 
   .page__section--right {
-    width: 60%;
+    width: 62%;
   }
 }
 
